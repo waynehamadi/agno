@@ -1,5 +1,15 @@
 # Test Log
 
+### datacircle.py
+
+**Status:** PASS
+
+**Description:** Runs the example as written against Datacircle's production Streamable HTTP MCP endpoint through Agno's `MCPTools`, with a Datacircle API key as a bearer token and `OpenAIResponses` (`gpt-5.6-luna`).
+
+**Result:** Agno discovered all six tools without `include_tools` and the two the example keeps with it. The agent called `get_linkedin_profile` (provider `up2data`) and `get_balance`, then summarized the profile in three lines and reported the balance. The example also passes Ruff formatting, Ruff lint and the cookbook pattern check.
+
+---
+
 ### magic_hour.py
 
 **Status:** PASS

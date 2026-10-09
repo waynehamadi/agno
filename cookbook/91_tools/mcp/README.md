@@ -57,6 +57,10 @@ This example shows how to choose which MCP protocol era `MCPTools` negotiates. T
 
 This example connects to Magic Hour's hosted MCP server to create images and videos. It shows bearer authentication, long-running render handling, reuse of project IDs after timeouts, and exact output URL retrieval.
 
+14. Datacircle Agent (`datacircle.py`)
+
+This example connects to Datacircle's hosted MCP server with a Datacircle API key as a bearer token. It reads a LinkedIn profile and the balance; `include_tools` keeps the agent to those two tools.
+
 ## Getting Started
 
 ### Prerequisites
@@ -76,6 +80,12 @@ Export your API keys:
 export OPENAI_API_KEY="your_openai_api_key"
 ```
 
+For the Datacircle example, log in at [datacircle.dev](https://datacircle.dev/login) with your work email, copy your API key and export it:
+
+```bash
+export DATACIRCLE_API_KEY="your_datacircle_api_key"
+```
+
 > For the GitHub example, create a Github PAT following [these steps](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/github#setup).
 
 ### Run the Examples
@@ -88,6 +98,7 @@ python structured_content.py
 python emem.py
 python peer_cash.py
 python magic_hour.py
+python datacircle.py
 ```
 
 ## How It Works
